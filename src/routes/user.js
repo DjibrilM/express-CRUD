@@ -1,10 +1,17 @@
-import expires from "express"
-import {jwtVerification} from "../middlewares/is-auth.js"
-import { getPrivateProfile , PublicProfile } from "../controller/user.js" 
-const route = expires.Router();
+import express from "express";
+import { jwtVerification } from "../middlewares/is-auth.js";
+import userProfileControllers from "../controller/user.js";
+const route = express.Router();
 
+route.get(
+  "/pulicProfile/:id",
+  jwtVerification,
+  userProfileControllers.PublicProfile
+);
+route.get(
+  "/privateProfile",
+  jwtVerification,
+  userProfileControllers.getPrivateProfile
+);
 
-route.get('/pulicProfile/:id', jwtVerification , PublicProfile)
-route.get('/privateProfile',jwtVerification, getPrivateProfile)
-
-export default route
+export default route;
