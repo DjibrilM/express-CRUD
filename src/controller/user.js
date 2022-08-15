@@ -43,4 +43,5 @@ class userProfileControllers {
   };
 }
 
+
 export default userProfileControllers;
