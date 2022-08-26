@@ -11,6 +11,7 @@ import validation from "../helpers/express-validator.js";
 // more than 10 characters
 //and should be also alphanimeric
 
+
 router.post(
   "/create",
   validation.postBlog,
