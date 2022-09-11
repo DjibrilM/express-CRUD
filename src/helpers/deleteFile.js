@@ -9,4 +9,5 @@ const deleteFile = (filePath,cb)  => {
   }))
 }
 
+
 export default deleteFile
