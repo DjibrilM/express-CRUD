@@ -5,6 +5,7 @@ const deleteFile = (filePath,cb)  => {
         if (err) {
           console.log('faild to delete the following file',err)
           cb()
+            
       }
   }))
 }
