@@ -2,6 +2,7 @@ import slug from "mongoose-slug-generator";
 import mongoose from "mongoose";
 mongoose.plugin(slug);
 
+
 const blogSchema = new mongoose.Schema(
   {
     title: {
