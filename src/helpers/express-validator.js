@@ -9,6 +9,7 @@ body('description','the description should of 10 characters as the minimum')
 .isLength({min:10})
 ]
 }
+  
 static postUpdate (){
 return [
 body('title','the title should be at least with four caracters')
