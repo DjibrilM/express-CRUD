@@ -1,6 +1,5 @@
 import {body}  from "express-validator";
 
-
 class expressValidator {
 static postBlog (){
 return [
